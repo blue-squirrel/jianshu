@@ -1,4 +1,6 @@
 import React, {Component } from 'react'
+import { connect } from 'react-redux';
+
 import {
     HeaderWrapper,
     Logo,
@@ -20,15 +22,30 @@ class Header extends Component{
                         
                     </NavSearch>
                     <NavItem className='right'>登录</NavItem>
-                    <NavItem className='right'>Aa</NavItem>
+                    <NavItem className='right'>
+                    <span class="iconfont">&#x334;</span>
+                    </NavItem>
                     <Addition>
                         <Button className='reg'>注册</Button>
-                        <Button className='writting'>写文章</Button>
-                    </Addition>
+                        <Button className='writting'>
+                        <span class="iconfont">&#x652;</span>写文章</Button>
+                    </Addition> 
                 </Nav>
             </HeaderWrapper>
         )
     }
 }
 
-export default Header
+const mapStateToProps=(state)=>{
+    return {
+
+    }
+}
+
+const mapDispathToProps = (dispatch) =>{
+    return {
+        
+    }
+}
+
+export default connect(mapStateToProps,mapDispathToProps)(Header);
