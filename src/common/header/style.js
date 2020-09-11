@@ -8,7 +8,7 @@ export const HeaderWrapper = styled.div`
   position: relative;
 `
 
-export const Logo = styled.div`
+export const Logo = styled.a`
   position: absolute ;
   top: 0;
   left: 0;
