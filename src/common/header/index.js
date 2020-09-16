@@ -1,4 +1,4 @@
-import React, {Component } from 'react'
+import React  from 'react'
 import { connect } from 'react-redux';
 
 import {
@@ -10,10 +10,10 @@ import {
     Addition,
     Button
 } from "./style"
-class Header extends Component{
-    render(){
-        return (
-            <HeaderWrapper>
+
+const Header =(props)=>{
+    return (
+<HeaderWrapper>
                 <Logo href='/'/>
                 <Nav>
                     <NavItem className='left active'>首页</NavItem>
@@ -32,8 +32,7 @@ class Header extends Component{
                     </Addition> 
                 </Nav>
             </HeaderWrapper>
-        )
-    }
+    );
 }
 
 const mapStateToProps=(state)=>{
